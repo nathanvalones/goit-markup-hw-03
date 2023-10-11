@@ -13,11 +13,9 @@ body {
     color: var(--NAVY-BLUE);
 }
 
-
 .flex-container {
     width: 1158px;
 }
-
 
 .list {
     list-style-type: none;
@@ -230,11 +228,12 @@ body {
 
 .bg-light {
     background-color: var(--CLOUD);
+    height: 732px;
 }
 
 .team li {
     background-color: var(--WHITE);
-    margin-top: 120px;
+    margin-top: 40px;
 }
 
 .team h2 {
