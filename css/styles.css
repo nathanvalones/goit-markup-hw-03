@@ -1,3 +1,5 @@
+
+/* General Styling */
 :root {
     --IRIS: #4D5AE5;
     --NAVY-BLUE: #2E2F42;
@@ -6,21 +8,22 @@
     --SLATE: #434455;
 }
 
-* {
-    margin: 0;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--NAVY-BLUE);
 }
 
-.benefits {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 120%;
-    letter-spacing: 0.4px;
-    color: var(--NAVY-BLUE)
+
+.flex-container {
+    width: 1158px;
+}
+
+
+.list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
 }
 
 .text {
@@ -29,6 +32,50 @@ body {
     font-weight: 400;
     line-height: 150%;
     letter-spacing: 0.32px;
+}
+
+.bg-dark {
+    color: var(--CLOUD);
+    background-color: var(--NAVY-BLUE);
+    height: 312px;
+}
+
+.flex-link {
+    gap: 40px;
+    padding-left: 56px;
+}
+
+.flex-contacts {
+    gap: 40px;
+    padding-left: 200px;
+}
+
+/* End of General Styling */
+
+/* Header Styling */
+
+.logo {
+    text-decoration: none;
+}
+
+.logo-web {
+    color: var(--IRIS);
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 116.667%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.logo-studio-nav {
+    color: var(--NAVY-BLUE);
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 116.667%;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .nav-link {
@@ -65,24 +112,35 @@ body {
     color: var(--IRIS);
 }
 
-.logo-web {
-    color: var(--IRIS);
-    font-family: Raleway;
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 116.667%;
-    text-decoration: none;
-    text-transform: uppercase;
+.container {
+    width: 1158px;
+    margin: 24px;
+    gap: 24px;
+
 }
 
-.logo {
-    text-decoration: none;
+.d-flex {
+    display: flex;
+    margin-left: 50px;
 }
 
-.list {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
+.header .d-flex {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+
+/* End of Header Styling*/
+
+/* Hero Styling */
+
+.benefits {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.4px;
+    color: var(--NAVY-BLUE)
 }
 
 .team-name {
@@ -101,6 +159,7 @@ body {
     letter-spacing: 1.12px;
     background-color: var(--NAVY-BLUE);
     color: var(--WHITE);
+    margin: 0px;
 }
 
 .hero-btn {
@@ -112,6 +171,7 @@ body {
     letter-spacing: 0.64px;
     border-radius: 4px;
     border: none;
+    margin-top: 48px;
     padding: 16px 32px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
@@ -121,25 +181,55 @@ body {
     cursor: pointer;
 }
 
+.benefits ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    gap: 24px;
+    margin-top: 120px;
+}
+
+.hero {
+    height: 600px;
+    text-align: center;
+}
+
+.hero-text {
+    padding-top: 164px;
+}
+
+/* End of Hero Styling */
+
+/* About Styling */
+
 .profile {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
     line-height: 111.111%;
     letter-spacing: 0.72px;
-    text-transform: capitalize;
+    text-transform: capitalize;  
 }
 
-.bg-dark {
-    color: var(--CLOUD);
-    background-color: var(--NAVY-BLUE);
-    width: 1440px;
-    height: 312px;
+.about ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 24px;
 }
+
+.about h2 {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 72px;
+}
+
+/* End of About Styling */
+
+/* Team Members Styling */
 
 .bg-light {
     background-color: var(--CLOUD);
-    width: 1440px;
 }
 
 .team li {
@@ -147,15 +237,37 @@ body {
     margin-top: 120px;
 }
 
-.logo-studio-nav {
-    color: var(--NAVY-BLUE);
-    font-family: Raleway;
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 116.667%;
-    text-decoration: none;
-    text-transform: uppercase;
+.team h2 {
+    text-align: center;
+    margin-top: 120px;
 }
+
+.team h3 {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.team p {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.team h2 {
+    text-align: center;
+    padding-top: 120px;
+}
+
+.team ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 24px;
+    text-align: center;
+}
+
+/* End of Team Member Styling */
+
+/* Footer Styling */
 
 .logo-studio-footer {
     color: var(--CLOUD);
@@ -172,67 +284,13 @@ body {
     color: var(--WHITE);
 }
 
-.about ul { 
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    gap: 24px;
-    width: 1440px;
+.flex-footer {
+   padding-top: 100px;
+   padding-left: 20px;
 }
 
-.about h2 {
-    text-align: center;
-    margin-top: 120px;
-    margin-bottom: 72px;
-    width: 1440px;
-}
 
-.team ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    gap: 24px;
-    width: 1440px;
-    text-align: center;
-}
 
-.team h2 {
-    text-align: center;
-    margin-top: 120px;
-    width: 1440px;
-}
 
-.team h3 {
-    margin-top: 32px;
-    text-align: center;
-}
 
-.team p {
-    margin-bottom: 32px;
-    text-align: center;
-}
 
-.team h2 {
-    text-align: center;
-    padding-top: 120px;
-    width: 1440px;
-}
-
-.benefits ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    gap: 24px;
-    margin-top: 120px;
-    width: 1440px;
-}
-
-.hero {
-    width: 1440px;
-    height: 600px;
-    text-align: center;
-}
-
-.hero-text {
-    padding: 188px 472px 48px 472px;
-}
