@@ -14,7 +14,7 @@ body {
 }
 
 .flex-container {
-    width: 1158px;
+    width: 1440px;
 }
 
 .list {
@@ -45,7 +45,7 @@ body {
 
 .flex-contacts {
     gap: 40px;
-    padding-left: 200px;
+    padding-left: 332px;
 }
 
 /* End of General Styling */
@@ -64,6 +64,7 @@ body {
     line-height: 116.667%;
     text-decoration: none;
     text-transform: uppercase;
+    padding-left: 114px;
 }
 
 .logo-studio-nav {
@@ -111,7 +112,7 @@ body {
 }
 
 .container {
-    width: 1158px;
+    width: 1440px;
     margin: 24px;
     gap: 24px;
 
@@ -119,13 +120,12 @@ body {
 
 .d-flex {
     display: flex;
-    margin-left: 50px;
 }
 
 .header .d-flex {
     display: flex;
     align-items: center;
-    margin-left: 40px;
+    
 }
 
 
@@ -138,7 +138,12 @@ body {
     font-weight: 500;
     line-height: 120%;
     letter-spacing: 0.4px;
-    color: var(--NAVY-BLUE)
+    color: var(--NAVY-BLUE);
+    display: flex;
+    width: 264px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
 }
 
 .team-name {
@@ -181,10 +186,11 @@ body {
 
 .benefits ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     list-style-type: none;
     gap: 24px;
     margin-top: 120px;
+    margin-left: 156px;
 }
 
 .hero {
@@ -234,6 +240,8 @@ body {
 .team li {
     background-color: var(--WHITE);
     margin-top: 40px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team h2 {
@@ -270,17 +278,20 @@ body {
 
 .logo-studio-footer {
     color: var(--CLOUD);
+    font-family: Raleway;
     font-size: 18px;
     font-weight: 800;
     line-height: 116.667%;
     text-decoration: none;
-    text-transform: uppercase; 
+    text-transform: uppercase;
+     
 }
 
 .footer-text {
     line-height: 150%;
     letter-spacing: 0.32px;
     color: var(--WHITE);
+    padding-left: 114px;
 }
 
 .flex-footer {
