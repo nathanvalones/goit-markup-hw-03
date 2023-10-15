@@ -13,6 +13,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--NAVY-BLUE);
+    margin: 0 auto;
 }
 
 .flex-container {
