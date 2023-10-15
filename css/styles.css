@@ -6,6 +6,8 @@
     --WHITE: #FFF;
     --CLOUD: #F4F4FD;
     --SLATE: #434455;
+    --CORNFLOWER: #E7E9FC;
+    --OCEAN: #404BBF;
 }
 
 body {
@@ -21,7 +23,8 @@ body {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
-    display: flex;
+    display: flex; 
+    justify-content: center;
 }
 
 .text {
@@ -54,6 +57,12 @@ body {
 
 .logo {
     text-decoration: none;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 116.667%;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
 }
 
 .logo-web {
@@ -113,21 +122,21 @@ body {
 
 .container {
     width: 1440px;
-    margin: 24px;
+    margin: 24px 0 0 0;
     gap: 24px;
-
+    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+    background: var(--WHITE, #FFF);
 }
 
 .d-flex {
     display: flex;
+    padding-bottom: 12px;
 }
 
 .header .d-flex {
     display: flex;
     align-items: center;
-    
 }
-
 
 /* End of Header Styling*/
 
@@ -273,6 +282,80 @@ body {
 }
 
 /* End of Team Member Styling */
+
+/* Portfolio Styling */
+
+.portfolio {
+    width: 1440px;
+    text-align: center;
+}
+
+.port-btn {
+    display: inline-flex;
+    text-align: center;
+    gap: 24px;
+    padding-top: 72px;
+    padding-bottom: 48px;
+}
+
+.port-link:hover,
+.port-link:focus {
+    color: var(--WHITE);
+    cursor: pointer;
+    background: var(--OCEAN);
+}
+
+.port-link {
+    font-family: Roboto;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+    background: var(--CLOUD, #F4F4FD);
+    color: var(--IRIS, #4D5AE5);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.64px;
+}
+
+.projects {
+    display: flex;
+    width: 1440px;
+}
+
+.proj-list {
+    width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.proj-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    width: 100%;
+}
+
+.proj-caption {
+    display: flex;
+    padding: 0px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.proj-caption h3 {
+    margin: 0;
+    padding-top: 32px;
+}
+
+.proj-caption p {
+    margin: 0;
+    padding-bottom: 32px;
+}
 
 /* Footer Styling */
 
